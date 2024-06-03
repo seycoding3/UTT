@@ -2,9 +2,9 @@ try:
     from bs4 import BeautifulSoup
     import requests
 except:
-    import subproccess,sys
-    subproccess.call("pip install requests")
-    subproccess.call("pip install beautifulsoup")
+    import subprocess,sys
+    subprocess.call("pip install requests")
+    subprocess.call("pip install beautifulsoup")
     print("Please Restart.")
     sys.exit(1)
 url = input("URL:")
